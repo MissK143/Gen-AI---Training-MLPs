@@ -2,6 +2,35 @@
 
 In this exercise, you will train a multi-layer perceptron (MLP) to classify handwritten digits from the MNIST dataset. The MNIST dataset consists of 28x28 grayscale images of handwritten digits (0 to 9). The task is to classify each image into one of the 10 classes (one for each digit).
 
+# Summary
+This exercise focuses on classifying handwritten digits using a multi-layer perceptron (MLP) with the MNIST dataset. 
+
+## Dataset Overview: 
+The MNIST dataset consists of thousands of 28x28 grayscale images of handwritten digits (0-9).
+
+## Loading Data: 
+I begin by loading the dataset using scikit-learn, which provides the images (features) and their corresponding labels (digits).
+
+## Data Preparation: 
+The dataset is split into training and test sets. 
+The images are converted into NumPy arrays and scaled from pixel values (0-255) to a range of 0-1 for better model performance.
+
+## Model Creation: 
+I create a multi-layer perceptron classifier using scikit-learn's neural network module. 
+The model is configured with parameters such as the number of hidden layers and the number of training iterations (epochs).
+
+## Training the Model: 
+I train the model while monitoring the loss, which decreases over time, indicating improved performance.
+
+## Model Evaluation: 
+The accuracy of the model is evaluated on both the training and test datasets. 
+As expected, the training accuracy is typically higher than the test accuracy since the model has not seen the test data during training.
+
+## Predictions: 
+Finally, I make predictions using the model on a set of images and compare the predicted labels with the original labels.
+
+
+
 ## Step 1: Load the dataset
 We obtain the MNIST dataset using scikit-learn.
 
