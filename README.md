@@ -34,6 +34,10 @@ for index, (image, label) in enumerate(zip(X_train[0:3], y_train[0:3])):
     plt.imshow(np.reshape(image, (28, 28)), cmap=plt.cm.gray)
     plt.title("Label: %s\n" % label, fontsize=20)
 ```
+## Handwritten Digits Image
+![Handwritten Digits](handw.png)
+
+
 # Step 2: Create and train a Multi-Layer Perceptron
 We will use ```sklearn.neural_network``` to build a Multi-Layer Perceptron in a single command. We'll train it using a second command!
 
@@ -91,5 +95,6 @@ for index, (image, prediction, label) in enumerate(
 
     plt.axis("off")  # hide axes
 ```
-
+## Predictions Image
+![Predictions](pred.png)
 
